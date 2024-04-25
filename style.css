@@ -238,6 +238,7 @@ h3 {
 }
 .separator svg {
   max-width: 15px;
+  flex: none;
 }
 .separator::after,
 .separator::before {
