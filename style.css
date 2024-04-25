@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lugrasimo&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lugrasimo&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: italic;
   color: black;
   margin: 0;
   padding: 0;
@@ -12,6 +13,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+* {
+  font-weight: 400 !important;
 }
 
 .history video {
@@ -34,7 +39,6 @@ body {
   margin: 25px 10px;
 }
 .date {
-  font-family: "Dancing Script", cursive;
 }
 .date p {
   line-height: 25px;
@@ -46,7 +50,7 @@ body {
 .textmore p {
   text-align: justify;
   margin: 0;
-  font-family: "Dancing Script", cursive;
+  max-width: 300px;
 }
 
 .music {
@@ -82,40 +86,79 @@ body {
   fill: #f2d335;
 }
 
+.TeEsperamos a {
+  width: 100%;
+  max-width: 300px;
+  min-height: 50px;
+  background-color: #f2d335;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 40px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+}
+.TeEsperamos a span {
+  padding-bottom: 3px;
+}
 .sectioncita h1 {
   text-align: center;
   font-size: 40px;
-  font-family: "Dancing Script", cursive;
   color: #f2d335;
   margin: 0;
+  margin-bottom: 8px;
 }
 .sectioncita p {
   text-align: center;
   font-size: medium;
   max-width: 300px;
-  font-family: "Dancing Script", cursive;
-  margin: 10px auto 20px;
+  margin: 0 auto;
+}
+
+.marriageDate_title {
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+}
+.marriageDate_title.top {
+  margin-top: 30px;
+}
+.marriageDate_title.bottom {
+  margin-bottom: 30px;
 }
 
 .marriageDate {
   text-align: center;
-  font-family: "Dancing Script", cursive;
 }
 
 .marriageDate p {
   margin-top: 1000px;
 }
 
+.marriageDate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .marriageDate b {
-  font-size: 30px;
+  font-size: 23px;
+  padding: 5px 0;
+  max-width: 110px;
+  width: 100%;
   font-weight: 100;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 
 .marriageDate span {
-  margin: 0 8px 0 8px;
-  font-size: 40px;
+  margin: 0 15px;
+  font-size: 78px;
+  line-height: 82px;
+  position: relative;
+  bottom: 12px;
 }
 
 .church {
@@ -132,12 +175,10 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  gap: 10px;
 }
 
 .boda p,
 h3 {
-  font-family: "Dancing Script", cursive;
   margin: 0;
   font-size: 30px;
   font-weight: 400;
@@ -173,7 +214,6 @@ h3 {
 
 .AboutUs h1 {
   margin-bottom: 10px;
-  font-family: "Dancing Script", cursive;
   font-weight: unset;
   font-size: 38px;
   width: max-content;
@@ -189,10 +229,28 @@ h3 {
   padding-bottom: 10px;
 }
 
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 20px 0 10px;
+}
+.separator svg {
+  max-width: 15px;
+}
+.separator::after,
+.separator::before {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background-color: #000;
+}
+
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 200px;
+  width: 300px;
   height: auto;
   border-radius: 20px;
 }
@@ -213,13 +271,11 @@ h3 {
   max-width: 300px;
   gap: 10px;
   text-align: center;
-  font-family: "Dancing Script", cursive;
   justify-content: center;
 }
 
 .contador h1 {
   text-align: center;
-  font-family: "Dancing Script", cursive;
   font-size: larger;
 }
 
@@ -253,7 +309,7 @@ h3 {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  border-radius: 300px 300px 0 0;
+  border-radius: 300px;
 }
 
 .asistencia button {
@@ -281,7 +337,6 @@ h3 {
 
 .asistencia p {
   color: aliceblue;
-  font-family: "Dancing Script", cursive;
   font-size: 30px;
   text-align: center;
   margin-bottom: 15px;
@@ -292,12 +347,12 @@ h3 {
   max-width: 500px;
   height: 300px;
   margin: 0 auto;
+  margin-top: 10px;
 }
 
 .asistencia h2 {
   align-items: center;
   text-align: center;
-  font-family: "Dancing Script", cursive;
   font-size: 30px;
   margin-top: 30px;
 }
@@ -306,13 +361,19 @@ h3 {
   font-size: 50px;
   border: none;
   text-decoration: none;
-  color: #f2d335;
+  /* color: #f2d335; */
   font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .TeEsperamos p {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
-  font-family: "Dancing Script", cursive;
   margin-top: 0;
+  margin-bottom: 17px;
+}
+
+.marriageDate {
+  max-width: none !important;
 }
