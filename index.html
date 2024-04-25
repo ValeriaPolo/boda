@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <audio autoplay controls loop src="./multimedia/tu-poeta.mp3"></audio>
+    <audio loop src="./multimedia/tu-poeta.mp3"></audio>
     <!-- <img src="./multimedia/mata.jpg" class="flower" alt="" /> -->
     <section class="ourSong">
       <div class="imagen">
@@ -27,6 +27,7 @@
       </div>
       <div class="music">
         <svg
+          onclick="handlePlayAudio()"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 384 512"
           class="play"
@@ -126,8 +127,8 @@
       <div class="boda">
         <h3
           style="
-            color: #f2d335;
-            font-size: 20px;
+            color: #b69b15;
+            font-size: 27px;
             position: relative;
             bottom: 13px;
           "

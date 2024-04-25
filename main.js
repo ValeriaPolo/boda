@@ -1,3 +1,8 @@
+const handlePlayAudio = () => {
+  const audio = document.querySelector("audio");
+  audio.play();
+};
+
 const swiperBoda = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
