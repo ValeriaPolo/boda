@@ -112,8 +112,8 @@ body {
 }
 .sectioncita p {
   text-align: center;
-  font-size: medium;
-  max-width: 300px;
+  font-size: 22px;
+  max-width: 362px;
   margin: 0 auto;
 }
 
@@ -180,7 +180,7 @@ body {
 .boda p,
 h3 {
   margin: 0;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
 }
 
