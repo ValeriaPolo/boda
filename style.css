@@ -16,7 +16,6 @@ body {
   background-image: url("/multimedia/background.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;  
-  background-size: 100%;
   position: relative;
   margin-top: 50px
 }
