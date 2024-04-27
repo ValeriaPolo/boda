@@ -13,25 +13,25 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
+   /*
   background-image: url("/multimedia/background.jpg");
   background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat;  
-  position: relative;
+  background-repeat: no-repeat;  */
 }
 
-body:after{
-  content:"";
-  position:fixed; /* stretch a fixed position to the whole screen */
-  top:0;
-  height:100vh; /* fix for mobile browser address bar appearing disappearing */
-  left:0;
-  right:0;
-  z-index:-1; /* needed to keep in the background */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.background {
+  z-index: 10;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 * {
@@ -419,3 +419,4 @@ h3 {
     width: 60%;
   }
 }
+
