@@ -3,6 +3,11 @@ const handlePlayAudio = () => {
   audio.play();
 };
 
+const handlePauseAudio = () => {
+  const audio = document.querySelector("audio");
+  audio.pause();
+};
+
 const swiperBoda = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
@@ -22,7 +27,7 @@ const swiperBoda = new Swiper(".mySwiper", {
 
 // cuando cargue
 document.addEventListener("DOMContentLoaded", () => {
-  swiperBoda.slideTo(2); // vaya al tercer slide
+  swiperBoda.slideTo(3); // vaya al tercer slide
 });
 
 // Fecha objetivo (02 de junio)
